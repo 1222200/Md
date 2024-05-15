@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta Pagina es un formulario de contacto para un desarrollador web">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labels</title>
+</head>
+<body>
+
+    <div class="form_input" >
+        <form>
+        <h2>Formulario De Contacto</h2>
+        <!--Simple Inputs--> 
+        <label for="Nombre">Nombre y Apellido</label>    
+        <input  type="text" placeholder="Jhonny Pym" required minlength="7" id="Nombre">
+        <label for="Contacto">Email</label>   
+        <input  type="email" placeholder="ejemplo@gmail.com" required id="Contacto">
+        <label for="Usuario">Interesado/a</label>
+        <!--Selects&Option--> 
+        <select name="type_of_user" id="Usuario">
+            <option value="user1">Empresa</option>
+            <option  value="user2">Independiente</option>
+            <option  value="user3">Seguidor</option>
+        </select>
+        <!--Datalist&Option--> 
+        <label>Referente</label>
+        <input list="referente" name="referente">
+        <datalist id="referente" name="type_of_user">
+            <option >Un Amigo</option>
+            <option >Otro(especifica)</option>
+            <option >Empresa</option>
+        </datalist>
+        <!--Textarea--> 
+        <label for="solicitud">Mensaje</label >
+        <textarea placeholder="Deja tu mensaje... " id="solicitud"></textarea>
+
+        <label for="CheckBox">Acepto los terminos y condiciones </label>   
+        <input class="CheckBox" type="checkbox" placeholder="acepto los terminos y condiciones" required id="CheckBox">
+
+            <button class="submit_button" onclick="window.location.href='Ad/index.html'">Enviar</button>
+
+            
+        
+</form>
+    </div>
+</body>
+</html>
+
+    
